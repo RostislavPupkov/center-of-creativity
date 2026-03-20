@@ -69,10 +69,10 @@
 
     .ids__inline-gallery__dash {
       width: 0.5em;
-      height: 0.1em;
+      height: 0.2em;
       border-radius: 0.05em;
       background-color: rgba(var(--ids__text-RGB), 0.5);
-      transition: width 100ms ease, background-color 100ms ease;
+      transition: width 200ms ease, background-color 200ms ease;
     }
 
     .ids__inline-gallery__dash-active {
