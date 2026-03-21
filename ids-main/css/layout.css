@@ -34,6 +34,12 @@
     padding: 0 calc(var(--ids__density) * 0.6em);
   }
 
+  &.S {
+    position: relative;
+    width: 50%;
+    margin: 0
+  }
+
   &.L {
     width: 80%;
 
@@ -69,13 +75,21 @@
 
 .ids__reverse {
   display: flex;
-  align-items: flex-end;
+  align-items: flex-end
 }
 
 .ids__list {
   display: flex;
   flex-direction: column;
   margin: 0.5em 0 0 0;
+
+  &.row {
+    max-width: 150px;
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    gap: 0.4em
+  }
 
   &.item {
     border-top: 1px solid rgba(var(--ids__text-RGB), 0.25);
@@ -84,6 +98,13 @@
     justify-content: space-between;
     margin: 0;
     padding: 0.5em 0 0.5em 0
+  }
+
+  &.close {
+     display: flex;
+     flex-direction: row;
+     margin: 0;
+     padding: 0.4em 0 0 0
   }
 }
 
