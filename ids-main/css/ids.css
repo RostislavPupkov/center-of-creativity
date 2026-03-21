@@ -74,18 +74,18 @@
     }
 
     &.huge {
-      font-size: 4em;
+      font-size: 3.4em;
       line-height: 1;
 
       @media (max-width: 767px) {
         &.huge {
-          font-size: 3.2em;
+          font-size: 2.8em;
         }
       }
 
       @media (max-width: 549.98px) {
         &.huge {
-          font-size: 2.8em;
+          font-size: 2.4em;
         }
       }
     }
@@ -103,7 +103,7 @@
 
   & h1 {
     font-size: 7em;
-    font-weight: 700;
+    font-weight: 600;
     letter-spacing: -0.04em;
     line-height: calc(var(--ids__density) / 1.5);
     margin-bottom: 0.4em;
@@ -125,6 +125,7 @@
   & h2 {
     font-size: 2.4em;
     font-weight: 650;
+    letter-spacing: -0.04em;
     line-height: calc(var(--ids__density) / 1.2);
     margin-bottom: 0.5em;
 
@@ -132,17 +133,26 @@
       font-size: 1.5em;
       font-weight: 600;
     }
-
-    &.XXS {
-      font-size: 1.2em;
-      font-weight: 800;
-    }
   }
 
   & h3 {
     font-size: 1.5em;
+    letter-spacing: -0.04em;
     line-height: calc(var(--ids__density) / 1.1);
     margin-bottom: 0.6em;
+
+    &.XS {
+      font-size: 1em;
+      text-transform: uppercase;
+      font-weight: 600;
+    }
+
+    &.XS-R {
+      font-size: 1em;
+      text-align: right;
+      text-transform: uppercase;
+      font-weight: 600;
+    }
   }
 
   & h4 {
