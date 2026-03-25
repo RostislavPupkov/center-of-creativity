@@ -2,10 +2,12 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="keywords" content="СПБГУПТД">
+    <meta name="description" content="Центр креативных индустрий">
     <title>Центр креативных индустрий</title>
     <link rel="icon" type="image/png" href="images/icons/favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="preload" href="/fonts/IbmPlexMono.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="ids-main/fonts/IbmPlexMono.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="css/colors.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/settings.css">
@@ -23,15 +25,14 @@
     <main>
 
       <!-- Главная -->
-      <div class="ids__wrapper">
-        <div class="section" id="intro">
+      <section class="ids__wrapper">
+        <div class="section">
           <div class="ids__space L"></div>
           <div class="ids__text-width">
-            <!-- <ids-nav-item id="intro" label="Главная" class="ids__nav-item"></ids-nav-item> -->
             <h1>Центр креативных индустрий</h1>
             <div class="ids__space S"></div>
             <div class="ids__list row" style="max-width: none; display: flex; align-items: center; gap: 1.4em; margin-bottom: 1em;">
-              <a href="#contacts" style="text-decoration: none;">
+              <a href="#form" style="text-decoration: none;">
                 <div class="ids__anchor ids__rounded" style="--ids__radius: 4em;">
                   <p class="btn">Подать заявку</p>
                   <svg width="1em" height="1.8em" viewBox="0 0 18 25" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -44,12 +45,10 @@
             <hr>
             <div class="ids__space M"></div>
             <h2 class="XS">
-              Дизайнеру стоит быть самостоятельным, разносторонним, мультидисциплинарным и сложным. Cтоит быть самостоятельным, разносторонним и сложным. А также еще одно предложение о&nbsp;том&nbsp;каким надо быть.
+              Центр реализует программы повышения квалификации в области дизайна, медиа и креативных индустрий с практико-ориентированным подходом к обучению. В процессе обучения слушатели осваивают современные инструменты, работают над проектами и формируют навыки, востребованные в индустрии. Научись говорить на&nbsp;визуальном языке технологий и дизайна!
             </h2>
             <ids-navbar class="ids__navbar">
               <ul>
-                <li class="current">
-                  <a href="#intro">Главная</a></li>
                 <li class="">
                   <a href="#about">О центре</a></li>
                 <li class="">
@@ -67,47 +66,22 @@
             <div class="ids__space M"></div>
           </div>
         </div>
-      </div>
+      </section>
 
       <!-- О центре -->
-      <div class="ids__wrapper L">
-        <!-- <div class="ids__space XL"></div>
-        <div class="ids__sequence M gap-L">
-          <span class="ids__sequence-item"></span>
-          <span class="ids__sequence-item"></span>
-          <span class="ids__sequence-item">
-            <h2 class="XS">ЦКР</h2>
-            <p>Это платформа для&nbsp;развития творческих профессий и поддержки культурного примательства. Это платформа для&nbsp;развития творческих профессий и поддержки культурного примательства и подерживать талантливых людей.</p>
-          </span>
-          <span class="ids__sequence-item">
-            <h2 class="XS">Миссия</h2>
-            <p style="margin-right: 1em;">Создавать условия для развития креативных индустрий и поддерживать талантливых людей в Санкт-Петербурге. Создавать условия для развития креативных индустрий и поддерживать талантливых людей.</p>
-          </span>
-        </div> -->
-        <ids-nav-item id="about" label="О центре" class__nav-item"></ids-nav-item>
+      <section class="ids__wrapper L">
+        <ids-nav-item id="about" label="О центре" class="ids__nav-item"></ids-nav-item>
         <div class="ids__space XL"></div>
         <div class="ids__sequence XL gap-L">
           <div class="ids__sequence-item">
-            <figure class="ids__inline-gallery" style="--img-aspect-ratio: 1024/658; --count: 11;">
-              <img src="images/inline-gallery/horse/img1.jpeg">
-              <img src="images/inline-gallery/horse/img2.jpeg">
-              <img src="images/inline-gallery/horse/img3.jpeg">
-              <img src="images/inline-gallery/horse/img4.jpeg">
-              <img src="images/inline-gallery/horse/img5.jpeg">
-              <img src="images/inline-gallery/horse/img6.jpeg">
-              <img src="images/inline-gallery/horse/img7.jpeg">
-              <img src="images/inline-gallery/horse/img8.jpeg">
-              <img src="images/inline-gallery/horse/img9.jpeg">
-              <img src="images/inline-gallery/horse/img10.jpeg">
-              <img src="images/inline-gallery/horse/img11.jpeg">
+            <figure class="ids__inline-gallery" style="--img-aspect-ratio: 1024/680; --count: 5;">
+              <img src="images/inline-gallery/logo/img1.png">
+              <img src="images/inline-gallery/logo/img2.png">
+              <img src="images/inline-gallery/logo/img3.png">
+              <img src="images/inline-gallery/logo/img4.png">
+              <img src="images/inline-gallery/logo/img5.png">
               <figcaption class="ids__inline-gallery__dashes">
                 <span class="ids__inline-gallery__dash ids__inline-gallery__dash-active">
-                  <span class="ids__inline-gallery__dash"></span>
-                  <span class="ids__inline-gallery__dash"></span>
-                  <span class="ids__inline-gallery__dash"></span>
-                  <span class="ids__inline-gallery__dash"></span>
-                  <span class="ids__inline-gallery__dash"></span>
-                  <span class="ids__inline-gallery__dash"></span>
                   <span class="ids__inline-gallery__dash"></span>
                   <span class="ids__inline-gallery__dash"></span>
                   <span class="ids__inline-gallery__dash"></span>
@@ -120,16 +94,88 @@
           <div class="ids__sequence-item">
             <hgroup>
               <p>О центре</p>
-              <p class="huge">Сообщество какое-то,&nbsp;где можно получить повышение квалификации. Мы&nbsp;сможем вас научить говорить на актуальном визуальном языке технологий и дизайна! Приходите к&nbsp;нам, пожалуйста, очень просим, буквально умоляем!</p>
+              <p style="font-size: 2.1em; line-height: 1.15"; >ЦКИ (Центр креативных индустрий) — это подразделение учебного управления СПбГУПТД. У&nbsp;нас два отдела: научно-образовательный и&nbsp;научно-технологический. Мы&nbsp;работаем для того, чтобы каждый наш слушатель был еще успешнее в&nbsp;своей&nbsp;сфере! У нас ты освоишь дополнительные компетенции, важные для твоего профессионального развития.</p>
             </hgroup>
           </div>
         </div>
-      </div>
+      </section>
+
+      <!-- Галерея -->
+      <section class="ids__wrapper">
+        <div class="ids__space XL"></div>
+          <div class="section">
+            <ids-gallery class="ids__gallery">
+              <figure>
+                <a href="images/gallery/Photo by Jan van der Wolf_pexels-jan-van-der-wolf-11680885-11978833.jpg" data-pswp-width="1280" data-pswp-height="853">
+                  <img src="images/gallery/Photo by Jan van der Wolf_pexels-jan-van-der-wolf-11680885-11978833.jpg" alt="Photo by Jan van der Wolf">
+                </a>
+                <figcaption>Photo: Jan van der Wolf</figcaption>
+              </figure>
+              <figure>
+                <a href="images/gallery/Photo by Mehmet Turgut  Kirkgoz_geometric-modern-architecture-16615613.jpg" data-pswp-width="1280" data-pswp-height="1707">
+                  <img src="images/gallery/Photo by Mehmet Turgut  Kirkgoz_geometric-modern-architecture-16615613.jpg" alt="Photo by Mehmet Turgut Kirkgoz">
+                </a>
+                <figcaption>Photo: Mehmet Turgut Kirkgoz</figcaption>
+              </figure>
+              <figure>
+                <a href="images/gallery/Photo by Jan van der Wolf_abstract-image-of-a-shadow-on-a-green-wall-and-blue-sky-11895895.jpg" data-pswp-width="1280" data-pswp-height="853">
+                  <img src="images/gallery/Photo by Jan van der Wolf_abstract-image-of-a-shadow-on-a-green-wall-and-blue-sky-11895895.jpg" alt="Photo by Jan van der Wolf">
+                </a>
+                <figcaption>Photo: Jan van der Wolf</figcaption>
+              </figure>
+              <figure>
+                <a href="images/gallery/Photo by Jan van der Wolf_pexels-jan-van-der-wolf-11680885-11986204.jpg" data-pswp-width="1279" data-pswp-height="853">
+                  <img src="images/gallery/Photo by Jan van der Wolf_pexels-jan-van-der-wolf-11680885-11986204.jpg" alt="Photo by Jan van der Wolf">
+                </a>
+                <figcaption>Photo: Jan van der Wolf</figcaption>
+              </figure>
+              <figure>
+                <a href="images/gallery/Photo by Mehmet Turgut  Kirkgoz_white-geometric-building-corner-18075244.jpg" data-pswp-width="1280" data-pswp-height="960">
+                  <img src="images/gallery/Photo by Mehmet Turgut  Kirkgoz_white-geometric-building-corner-18075244.jpg" alt="Photo by Mehmet Turgut Kirkgoz">
+                </a>
+                <figcaption>Photo: Mehmet Turgut Kirkgoz</figcaption>
+              </figure>
+              <figure>
+                <a href="images/gallery/Photo by Jan van der Wolf_pexels-jan-van-der-wolf-11680885-11986204.jpg" data-pswp-width="1279" data-pswp-height="853">
+                  <img src="images/gallery/Photo by Jan van der Wolf_pexels-jan-van-der-wolf-11680885-11986204.jpg" alt="Photo by Jan van der Wolf">
+                </a>
+                <figcaption>Photo: Jan van der Wolf</figcaption>
+              </figure>
+              <figure>
+                <a href="images/gallery/Photo by Mehmet Turgut  Kirkgoz_white-geometric-building-corner-18075244.jpg" data-pswp-width="1280" data-pswp-height="960">
+                  <img src="images/gallery/Photo by Mehmet Turgut  Kirkgoz_white-geometric-building-corner-18075244.jpg" alt="Photo by Mehmet Turgut Kirkgoz">
+                </a>
+                <figcaption>Photo: Mehmet Turgut Kirkgoz</figcaption>
+              </figure>
+              <figure>
+                <a href="images/gallery/Photo by Jan van der Wolf_pexels-jan-van-der-wolf-11680885-11978833.jpg" data-pswp-width="1280" data-pswp-height="853">
+                  <img src="images/gallery/Photo by Jan van der Wolf_pexels-jan-van-der-wolf-11680885-11978833.jpg" alt="Photo by Jan van der Wolf">
+                </a>
+                <figcaption>Photo: Jan van der Wolf</figcaption>
+              </figure>
+              <figure>
+                <a href="images/gallery/Photo by Mehmet Turgut  Kirkgoz_geometric-modern-architecture-16615613.jpg" data-pswp-width="1280" data-pswp-height="1707">
+                  <img src="images/gallery/Photo by Mehmet Turgut  Kirkgoz_geometric-modern-architecture-16615613.jpg" alt="Photo by Mehmet Turgut Kirkgoz">
+                </a>
+                <figcaption>Photo: Mehmet Turgut Kirkgoz</figcaption>
+              </figure>
+              <figure>
+                <a href="images/gallery/Photo by Jan van der Wolf_abstract-image-of-a-shadow-on-a-green-wall-and-blue-sky-11895895.jpg" data-pswp-width="1280" data-pswp-height="853">
+                  <img src="images/gallery/Photo by Jan van der Wolf_abstract-image-of-a-shadow-on-a-green-wall-and-blue-sky-11895895.jpg" alt="Photo by Jan van der Wolf">
+                </a>
+                <figcaption>Photo: Jan van der Wolf</figcaption>
+              </figure>
+            </ids-gallery>
+          </div>
+        <div class="ids__space XL"></div>
+      </section>
 
       <!-- Направления -->
-      <div class="ids__wrapper L">
+      <section class="ids__wrapper L">
         <ids-nav-item id="vector" label="Направления" class="ids__nav-item"></ids-nav-item>
         
+
+        <!-- Разработка заявки на грантовый конкурс -->
         <div class="ids__space XL"></div>
         <div class="ids__sequence L gap-L ids__reverse">
           <div class="ids__sequence-item">
@@ -220,7 +266,7 @@
               <div class="ids__space S"></div>
               <h3 class="h3 XS">
                 <span>
-                  <a href="#form">PDF-версия</a>, <a href="#form">Учебный план</a>
+                  <a href="https://cci.sutd.ru/wp-content/uploads/2025/02/Grant_2025.pdf" target="_blank">PDF-версия</a>
                 </span>
               </h3>
           </div>
@@ -247,13 +293,13 @@
               <div class="ids__list row">
                 <img src="images/mentor/mentor2.1.png">
                 <img src="images/mentor/mentor2.2.png">
-                <img src="images/mentor/mentor2.1.png">
+                <img src="images/mentor/mentor2.3.png">
               </div>
             </div>
           </div>
         </div>
 
-
+        <!-- Управление креативными проектами -->
         <div class="ids__space XXL"></div>
         <div class="ids__sequence L gap-L ids__reverse">
           <div class="ids__sequence-item">
@@ -340,11 +386,17 @@
               <div class="ids__space M"></div>
               <h3 class="h3 XS">Преимущества</h3>
                 <p>Выдаем удостоверение о повышении квалификации.</p>
+                
+              <!-- Еще делается
+              
               <div class="ids__space S"></div>
               <h3 class="h3 XS">
+
                 <span>
                   <a href="#form">PDF-версия</a>, <a href="#form">Учебный план</a>
-                </span>
+                </span> 
+                
+              -->
               </h3>
           </div>
         </div>
@@ -365,6 +417,8 @@
           </div>
         </div>
 
+
+        <!-- Мобильная видеография -->
         <div class="ids__space XL"></div>
         <div class="ids__sequence L gap-L ids__reverse">
           <div class="ids__sequence-item">
@@ -376,18 +430,21 @@
               <p style="text-align: right;">В процессе обучения участники учатся снимать и обрабатывать видео, работать со звуком, добавлять графику и оформлять готовый материал с использованием мобильных устройств.</p>
               <div class="ids__space S"></div>
               <h3 class="h3 XS-R">
-                <a href="#form">Подать заявку</a>
+                <a href="https://forms.yandex.ru/u/672b58162530c21f79deec33/" target="_blank">Подать заявку</a>
               </h3>
           </div>
           <div class="ids__sequence-item">
               <div class="ids__inline-gallery" style="--img-aspect-ratio: 960/1440; --x: 0.675; --index: 11; --count: 7;">
-                <img src="images/cards/грант4.png" style="visibility: hidden;">                    
-                <img src="images/cards/грант3.png" style="visibility: hidden;">                
-                <img src="images/cards/грант2.png" style="visibility: hidden;">
-                <img src="images/cards/грант.png" style="visibility: visible;">
-                <img src="images/cards/грант5.png" style="visibility: hidden;">
-                <img src="images/cards/грант6.png" style="visibility: hidden;">
-                <img src="images/cards/грант7.png" style="visibility: hidden;">
+                <img src="images/cards/видеография5.png" style="visibility: hidden;"> 
+                <img src="images/cards/видеография4.png" style="visibility: hidden;">                    
+                <img src="images/cards/видеография3.png" style="visibility: hidden;">                
+                <img src="images/cards/видеография2.png" style="visibility: hidden;">
+                <img src="images/cards/видеография.png" style="visibility: visible;">
+                <img src="images/cards/видеография6.png" style="visibility: hidden;">
+                <img src="images/cards/видеография7.png" style="visibility: hidden;">
+                <img src="images/cards/видеография8.png" style="visibility: hidden;">
+                <img src="images/cards/видеография9.png" style="visibility: hidden;">
+                <img src="images/cards/видеография10.png" style="visibility: hidden;">
               </div>
           </div>
           <div class="ids__sequence-item">
@@ -443,7 +500,7 @@
               <div class="ids__space S"></div>
               <h3 class="h3 XS">
                 <span>
-                  <a href="#form">PDF-версия</a>, <a href="#form">Учебный план</a>
+                  <a href="https://sutd.ru/images/news/MobileVideography.pdf" target="_blank">PDF-версия</a>, <a href="https://cci.sutd.ru/wp-content/uploads/2024/11/%D0%9F%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B0_%D0%9F%D0%9A_%D0%9C%D0%BE%D0%B1%D0%B8%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F_%D0%B2%D0%B8%D0%B4%D0%B5%D0%BE%D0%B3%D1%80%D0%B0%D1%84%D0%B8%D1%8F_2023.pdf" target="_blank">Учебный план</a>
                 </span>
               </h3>
           </div>
@@ -459,16 +516,17 @@
               <div class="ids__list row">
                 <img src="images/mentor/mentor2.1.png">
                 <img src="images/mentor/mentor2.2.png">
-                <img src="images/mentor/mentor2.1.png">
+                <img src="images/mentor/mentor2.3.png">
               </div>
             </div>
           </div>
         </div>
+        <div class="ids__space XL"></div>
 
-      </div>
+      </section>
 
       <!-- Портфолио слушателей -->
-      <div class="ids__wrapper L">
+      <section class="ids__wrapper L">
         <ids-nav-item id="portfolio" label="Портфолио" class="ids__nav-item"></ids-nav-item>
         
         <div class="ids__space XXL"></div>
@@ -774,11 +832,12 @@
             </div>
           </div>
         </div>
+        <div class="ids__space XL"></div>
 
-      </div>
+      </section>
 
       <!-- Команда -->
-      <div class="ids__wrapper L">
+      <section class="ids__wrapper L">
         <ids-nav-item id="team" label="Команда" class="ids__nav-item"></ids-nav-item>
         
         <div class="ids__space XXL"></div>
@@ -923,13 +982,14 @@
             <h3 class="h3 XS">Создал какой-то проект</h3>
           </div>
         </div>
-      </div>
+        <div class="ids__space XL"></div>
+      </section>
 
       <!-- Новости -->
-      <div class="ids__wrapper L">
+      <section class="ids__wrapper L">
         <ids-nav-item id="news" label="Новости" class="ids__nav-item"></ids-nav-item>
         
-        <div class="ids__space XL"></div>
+        <div class="ids__space XXL"></div>
         <div class="ids__sequence L gap-L">
 
           <div class="ids__sequence-item" style="border-top: 1px solid rgba(var(--ids__text-RGB), 0.25); margin-bottom: 4em">
@@ -1061,12 +1121,57 @@
           </div>
 
         </div>
-      </div>
+        <div class="ids__space XL"></div>
+      </section>
+
+      <!-- СТА -->
+      <article class="ids__wrapper L" id="form">
+
+         <div class="ids__space XL"></div>
+         <div class="ids__sequence XL gap-L ids__rounded" style="--ids__radius: 4em; background-color: rgba(var(--ids__link-RGB), 1); color: rgba(var(--ids__background-RGB), 1); padding: 1.4em; filter: drop-shadow(0px 36px 36px rgba(var(--ids__link-RGB), 0.8))">
+          <div class="ids__sequence-item">
+            <h2>
+              Подать заявку
+            </h2>
+          </div>
+          <div class="ids__sequence-item">
+            <div style="padding-right: 8em;">
+              <p>
+                Для подачи заявки необходимо заполнить и&nbsp;отправить форму обратной связи
+              </p>
+              <p>
+                Или же можно просто написать. Где&nbsp;напишешь, там и ответим. <span style="color: rgba(var(--ids__background-RGB), 0.5)">Обещаем не&nbsp;тянуть с этим: почти всегда отвечаем день&nbsp;в&nbsp;день.</span>
+              </p>
+            </div>
+            <div class="ids__space XL"></div>
+            <div class="ids__list row" style="max-width: none">
+              <a href="#form" style="color: rgba(var(--ids__background-RGB), 1); text-decoration: none;">
+                <div class="ids__btn ids__rounded">
+                  <p class="btn">Заполнить форму</p>
+                </div>
+              </a>
+              <a href="https://vk.ru/kiitu" style="color: rgba(var(--ids__background-RGB), 1); text-decoration: none;">
+                <div class="ids__btn ids__rounded" style="height: 100%; padding: 0 0.9em; display: flex; align-items: center;">
+                  <img src="images/icons/vk.svg"></img>
+                </div>
+              </a>
+              <a href="https://t.me/marusyacomehere" style="color: rgba(var(--ids__background-RGB), 1); text-decoration: none;">
+                <div class="ids__btn ids__rounded" style="height: 100%; padding: 0 0.9em; display: flex; align-items: center;">
+                  <img src="images/icons/tg.svg"></img>
+                </div>
+              </a>
+            </div>
+          </div>
+
+         </div>
+        
+         <div class="ids__space XXL"></div>
+      </article>
 
       <!-- Документы -->
-      <div class="ids__wrapper L">
+      <article class="ids__wrapper L">
 
-        <div class="ids__space XXL"></div>
+      <!-- <div class="ids__space L"></div> -->
         <div class="ids__sequence XL gap-L" style="margin: 0 0 -0.4em 0;">
           <div class="ids__sequence-item">
             <h3 class="h3 XS">Важные формальности</h3>
@@ -1120,7 +1225,7 @@
             <p class="huge"></p>
           </div>
           <div class="ids__sequence-item">
-            <div class="ids__space S"></div>
+            <div class="ids__space M"></div>
             <div class="ids__list">
               <div class="ids__list item" style="border-top: none; margin: 0 0 -0.4em 0;">
                 <h3 class="h3 XS">Ресурсы</h3>
@@ -1154,52 +1259,51 @@
           </div>
         </div>
         
-      </div>
+        <div class="ids__space XL"></div>
+      </article>
 
       <!-- Контакты -->
-      <div class="ids__wrapper L">
+      <footer class="ids__wrapper XXL">
         <ids-nav-item id="contacts" label="Контакты" class="ids__nav-item"></ids-nav-item>
 
-         <div class="ids__space XXL"></div>
-         <div class="ids__sequence XL gap-L ids__rounded" style="--ids__radius: 4em; background-color: rgba(var(--ids__link-RGB), 1); color: rgba(var(--ids__background-RGB), 1); padding: 1.4em; filter: drop-shadow(0px 36px 36px rgba(var(--ids__link-RGB), 0.8))">
+        <div class="ids__space XL"></div>
+        <hr>
+        <div class="ids__sequence XL gap-L">
           <div class="ids__sequence-item">
-            <h2>
-              Подать заявку
-            </h2>
+            <img src="images/icons/Vector.svg" style="width: 100px;">
           </div>
           <div class="ids__sequence-item">
-            <div style="padding-right: 8em;">
-              <p>
-                Для подачи заявки необходимо заполнить и&nbsp;отправить форму обратной связи
-              </p>
-              <p>
-                Или же можно просто написать. Где&nbsp;напишешь, там и ответим. <span style="color: rgba(var(--ids__background-RGB), 0.5)">Обещаем не&nbsp;тянуть с этим: почти всегда отвечаем день&nbsp;в&nbsp;день.</span>
-              </p>
-            </div>
-            <div class="ids__space XL"></div>
-            <div class="ids__list row" style="max-width: none">
-              <a href="#form" style="color: rgba(var(--ids__background-RGB), 1); text-decoration: none;">
-                <div class="ids__btn ids__rounded">
-                  <p class="btn">Заполнить форму</p>
-                </div>
-              </a>
-              <a href="https://vk.ru/kiitu" style="color: rgba(var(--ids__background-RGB), 1); text-decoration: none;">
-                <div class="ids__btn ids__rounded" style="height: 100%; padding: 0 0.9em; display: flex; align-items: center; ">
-                  <img src="images/icons/vk.svg"></img>
-                </div>
-              </a>
-              <a href="https://t.me/marusyacomehere" style="color: rgba(var(--ids__background-RGB), 1); text-decoration: none;">
-                <div class="ids__btn ids__rounded" style="height: 100%; padding: 0 0.9em; display: flex; align-items: center; ">
-                  <img src="images/icons/tg.svg"></img>
-                </div>
-              </a>
+            <h3 class="XS">Контакты</h3>
+            <div class="ids__space L"></div>
+            <div class="ids__list">
+              <div class="ids__list row" style="max-width: none;">
+                <p class="loud" style="min-width: 100px;">А: </p>
+                <p class="loud">г. Санкт-Петербруг, пер. Джамбула, д. 13, 191180</p>
+              </div>
+              <div class="ids__space M"></div>
+              <div class="ids__list row" style="max-width: none;">
+                <p class="loud" style="min-width: 100px;">Т: </p>
+                <p class="loud">+7(961)155-00-66</p>
+              </div>
+              <div class="ids__space M"></div>
+              <div class="ids__list row" style="max-width: none;">
+                <p class="loud" style="min-width: 100px;">E: </p>
+                <p class="loud">cciuu@sutd.ru</p>
+              </div>
             </div>
           </div>
-
-         </div>
-        
-         <div class="ids__space XXL"></div>
-      </div>
+        </div>
+        <div class="ids__space L"></div>
+        <hr>
+        <div class="ids__sequence XL gap-L">
+          <div class="ids__sequence-item">
+            <p>НКО «Центр креативных индустрий»</p>
+          </div>
+          <div class="ids__sequence-item">
+            <p>© 2025 Санкт-Петербургский государственный университет промышленных&nbsp;технологий и дизайна</p>
+          </div>
+        </div>
+      </footer>
 
     </main>
 

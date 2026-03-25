@@ -233,4 +233,5 @@
 header,
 footer {
   padding: calc(var(--ids__density) * 1em);
+  padding-bottom: calc(var(--ids__density) * 0em);
 }
