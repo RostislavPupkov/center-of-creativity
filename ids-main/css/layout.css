@@ -15,7 +15,7 @@
   
     @media (width < 768px) {
       &.XL {
-        height: calc(var(--ids__density) * 0em);
+        height: calc(var(--ids__density) * 2.4em);
       }
     }
   }
@@ -29,14 +29,24 @@
   width: 70%;
   margin: 0 auto;
 
-  @media (width < 768px) {
-    width: 100%;
-    padding: 0 calc(var(--ids__density) * 0.6em);
+  @media (width < 1439px) {
+    &.ids__wrapper {
+      width: 70vw;
+      padding: 0 calc(var(--ids__density) * 0.6em);
+    }
+  }
+
+  @media (width < 767px) {
+    &.ids__wrapper {
+      width: 100%;
+      padding: 0 calc(var(--ids__density) * 0.6em);
+    }
   }
 
   &.S {
     position: relative;
     width: 50%;
+    display: flex;
     margin: 0
   }
 
@@ -75,7 +85,28 @@
 
 .ids__reverse {
   display: flex;
-  align-items: flex-end
+  align-items: flex-end;
+
+  @media (max-width: 767px) {
+      align-items: flex-start;
+  }
+
+  &.item {
+     text-align: right;
+     flex-direction: column;
+
+     @media (max-width: 767px) {
+        text-align: left;
+     }
+   }
+}
+
+.ids__teammate {
+  position: sticky;
+  top: 2em;
+  max-width: 50%;
+  max-height: max-content;
+  padding-right: 0.75em;
 }
 
 .ids__list {
@@ -83,12 +114,11 @@
   flex-direction: column;
   margin: 0.5em 0 0 0;
 
-  &.row {
-    max-width: 200px;
+  &.head {
+    margin: 0 0 -0.4em 0;
     display: flex;
     flex-direction: row;
-    margin: 0;
-    gap: 0.4em
+    --columns: 2;
   }
 
   &.item {
@@ -99,13 +129,12 @@
     margin: 0;
     padding: 0.5em 0 0.5em 0
   }
+}
 
-  &.close {
-     display: flex;
-     flex-direction: row;
-     margin: 0;
-     padding: 0.4em 0 0 0
-  }
+.ids__author {
+  display: flex;
+  align-items: center;
+  gap: 0.8em
 }
 
 .ids__btn {
@@ -127,11 +156,11 @@
 
 .ids__anchor {
   color: rgba(var(--ids__background-RGB), 1);
-  display: flex;
-  flex-direction: row;
+  display: inline-flex;
+  align-items: center;
   gap: 1em;
   background-color: rgba(var(--ids__link-RGB), 1);
-  padding: 0.6em 1.2em 0 1.2em;
+  padding: 0.8em 1em;
   width: fit-content;
   filter: drop-shadow(0px 18px 24px rgba(var(--ids__link-RGB), 0.8));
   transition:
@@ -146,6 +175,26 @@
         color 0s ease,
         background-color 0s ease;
     }
+
+  @media (width < 768px) {
+    &.ids__anchor {
+      padding: 0.6em 0.8em;
+      gap: 0.6em;
+      filter: drop-shadow(0px 12px 18px rgba(var(--ids__link-RGB), 0.8));
+      transition:
+          color 0.5s ease,
+          background-color 0.5s ease;
+          filter: 0.5s ease;
+
+    &:hover {
+      background-color: rgba(var(--ids__hover-RGB), 1);
+      filter: drop-shadow(0px 12px 18px rgba(var(--ids__hover-RGB), 1));
+      transition:
+        color 0s ease,
+        background-color 0s ease;
+    }
+    }
+  }
 }
 
 .ids__sequence {
@@ -174,7 +223,7 @@
     --columns: 4;
     width: calc((100% - var(--gap) * (var(--columns) - 1)) / var(--columns));
 
-    @media (width < 768px) {
+    @media (width < 767px) {
       --columns: 2;
     }
   }
@@ -183,7 +232,7 @@
     .ids__sequence-item {
       --columns: 2;
 
-      @media (width < 768px) {
+      @media (width < 767px) {
         --columns: 1;
       }
     }
@@ -193,8 +242,8 @@
     .ids__sequence-item {
       --columns: 3;
 
-      @media (width < 768px) {
-        --columns: 2;
+      @media (width < 767px) {
+        --columns: 1;
       }
     }
   }
@@ -203,9 +252,25 @@
     .ids__sequence-item {
       --columns: 6;
 
-      @media (width < 768px) {
+      @media (width < 767px) {
         --columns: 3;
       }
+    }
+  }
+}
+
+.ids__show {
+  display: none;
+
+  &.desktop {
+    @media (min-width: 768px) {
+      display: inline-block;
+    }
+  }
+
+  &.mobile {
+    @media (max-width: 767px) {
+      display: inline-block;
     }
   }
 }
