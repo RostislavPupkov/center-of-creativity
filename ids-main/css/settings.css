@@ -7,7 +7,7 @@
 @font-face {
   font-family: Ibm Plex Mono;
   font-style: normal;
-  font-weight: 100 900;
+  font-weight: 100 400 500 600;
   font-display: swap;
   src: url("../fonts/IbmPlexMono.woff2") format("woff2");
 }

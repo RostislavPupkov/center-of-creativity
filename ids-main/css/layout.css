@@ -9,16 +9,20 @@
   }
   &.L {
     height: calc(var(--ids__density) * 2.4em);
+
+    @media (width < 768px) {
+        height: calc(var(--ids__density) * 1.4em);
+    }
   }
+
   &.XL {
     height: calc(var(--ids__density) * 4em);
   
     @media (width < 768px) {
-      &.XL {
         height: calc(var(--ids__density) * 2.4em);
-      }
     }
   }
+
   &.XXL {
     height: calc(var(--ids__density) * 7em);
   }
@@ -31,7 +35,7 @@
 
   @media (width < 1439px) {
     &.ids__wrapper {
-      width: 70vw;
+      width: 70%;
       padding: 0 calc(var(--ids__density) * 0.6em);
     }
   }
@@ -47,7 +51,8 @@
     position: relative;
     width: 50%;
     display: flex;
-    margin: 0
+    margin: 0;
+    padding: 0;
   }
 
   &.L {
@@ -127,20 +132,32 @@
     flex-direction: row;
     justify-content: space-between;
     margin: 0;
-    padding: 0.5em 0 0.5em 0
+    padding: 0.5em 0;
   }
 }
 
 .ids__author {
   display: flex;
   align-items: center;
-  gap: 0.8em
+  gap: 0.6em
+}
+
+.ids__tag {
+  width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.2em;
+
+  @media (max-width: 767px) {
+    width: 100%;
+    font-size: 0.8em;
+  }
 }
 
 .ids__btn {
   color: rgba(var(--ids__background-RGB), 1);
   background-color: rgba(var(--ids__background-RGB), 0.1);
-  padding: 0.6em 1.2em 0 1.2em;
+  padding: 0.6em 1.2em;
   width: fit-content;
   transition:
       color 0.5s ease,
@@ -152,6 +169,13 @@
         color 0s ease,
         background-color 0.5s ease;
     }
+
+  @media (max-width: 767px) {
+    padding: 0.6em 0.8em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 .ids__anchor {
@@ -177,14 +201,13 @@
     }
 
   @media (width < 768px) {
-    &.ids__anchor {
-      padding: 0.6em 0.8em;
-      gap: 0.6em;
-      filter: drop-shadow(0px 12px 18px rgba(var(--ids__link-RGB), 0.8));
-      transition:
-          color 0.5s ease,
-          background-color 0.5s ease;
-          filter: 0.5s ease;
+    padding: 0.6em 0.8em;
+    gap: 0.6em;
+    filter: drop-shadow(0px 12px 18px rgba(var(--ids__link-RGB), 0.8));
+    transition:
+        color 0.5s ease,
+        background-color 0.5s ease;
+        filter: 0.5s ease;
 
     &:hover {
       background-color: rgba(var(--ids__hover-RGB), 1);
@@ -192,7 +215,6 @@
       transition:
         color 0s ease,
         background-color 0s ease;
-    }
     }
   }
 }
@@ -264,7 +286,7 @@
 
   &.desktop {
     @media (min-width: 768px) {
-      display: inline-block;
+      display: block;
     }
   }
 

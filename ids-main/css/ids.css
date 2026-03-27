@@ -18,7 +18,20 @@
         color 0s ease,
         text-decoration 0s ease;
     }
+
+    &.nav {
+      color: rgb(var(--ids__text-RGB));
+      text-decoration: none;
+      transition: color 0.5s ease;
+
+      &:hover {
+        color: rgb(var(--ids__code-RGB));
+        transition:
+          color 0s ease;
+      }
+    }
   }
+
 
   .ids__promo-link {
     display: flex;
@@ -67,6 +80,11 @@
       letter-spacing: -0.04em;
     }
 
+    &.nav {
+      color: RGB(var(--ids__code-RGB));
+      margin-bottom: 0;
+    }
+
     &.XS {
       font-size: 0.8em;
       line-height: 1.2;
@@ -84,7 +102,7 @@
 
       @media (max-width: 767px) {
         &.loud {
-          font-size: 1.4em;
+          font-size: 1.2em;
         }
       }
     }
@@ -94,19 +112,20 @@
       line-height: 1.1;
 
       @media (max-width: 767px) {
-        font-size: 2.4em;
+        font-size: 2.2em;
       }
     }
 
     &.btn {
       font-size: 1.4em;
       line-height: 1.2;
-      letter-spacing: -0.08em;
-      margin-bottom: 0;
+      letter-spacing: -0.06em;
+      font-weight: 400;
+      margin-bottom: calc(var(--ids__density) * 0.1em);
 
       @media (max-width: 767px) {
         font-size: 0.8em;
-        letter-spacing: -0.06em;
+        letter-spacing: -0.04em;
       }
     }
   }
@@ -122,12 +141,12 @@
   & h5,
   & h6 {
     margin: 0;
-    font-weight: 600;
+    font-weight: 400;
   }
 
   & h1 {
     font-size: 7em;
-    font-weight: 600;
+    font-weight: 400;
     letter-spacing: -0.04em;
     line-height: calc(var(--ids__density) / 1.5);
     margin-bottom: 0.4em;
@@ -138,13 +157,12 @@
 
     &.S {
       font-size: 2.4em;
-      font-weight: 650;
     }
   }
 
   & h2 {
     font-size: 2.4em;
-    font-weight: 650;
+    font-weight: 400;
     letter-spacing: -0.04em;
     line-height: calc(var(--ids__density) / 1.2);
     margin-bottom: 0.5em;
@@ -152,7 +170,6 @@
     &.XS {
       font-size: 1.5em;
       line-height: calc(var(--ids__density) / 1);
-      font-weight: 600;
     }
   }
 
@@ -165,28 +182,35 @@
     &.XS {
       font-size: 1em;
       text-transform: uppercase;
-      font-weight: 600;
+      font-weight: 400;
     }
 
     &.XS-R {
       font-size: 1em;
       text-align: right;
       text-transform: uppercase;
-      font-weight: 600;
+      font-weight: 400;
 
     @media (width < 768px) {
       font-size: 1.4em;
       text-align: left;
       text-transform: none;
-      font-weight: 600;
+      font-weight: 400;
     }
   }
 }
 
   & h4 {
     font-size: 1.1em;
-    line-height: var(--ids__density);
-    margin-bottom: 0.5em;
+    line-height: calc(var(--ids__density) / 1.1);
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    margin-bottom: 0.6em;
+    font-weight: 100;
+
+    @media (width < 768px) {
+      font-size: 1em;
+    }
   }
 
   & h5 {
@@ -267,9 +291,9 @@
   }
 
   & code {
+    width: fit-content;
     font-size: 0.9em;
     font-family: "Ibm Plex Mono";
-    letter-spacing: 0.02em;
     font-weight: 450;
     padding: 0.1em 0.25em;
     border-radius: 0.2em;
