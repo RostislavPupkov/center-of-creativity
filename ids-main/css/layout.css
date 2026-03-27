@@ -316,7 +316,6 @@
   }
 }
 
-
 header,
 footer {
   padding: calc(var(--ids__density) * 1em);

@@ -105,6 +105,10 @@
           font-size: 1.2em;
         }
       }
+
+      &.box {
+        font-size: clamp(1rem, 2em, 3.4rem)
+      }
     }
 
     &.huge {
@@ -112,7 +116,7 @@
       line-height: 1.1;
 
       @media (max-width: 767px) {
-        font-size: 2.2em;
+        font-size: 2em;
       }
     }
 
